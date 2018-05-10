@@ -1,6 +1,5 @@
 ############################################################
-# Dockerfile to build dart-sdk
-# https://github.com/dart-lang/sdk
+# Dockerfile to build cross toolchain for ARMv6 with HF
 #
 ############################################################
 FROM debian:stretch

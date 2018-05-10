@@ -1,3 +1,5 @@
+A copy of the binaries can be found in the [armv6-rpi-linux-gnueabihf](https://github.com/manhluong/build_cross_toolchain_raspberry/tree/master/armv6-rpi-linux-gnueabihf/bin) folder.
+
 ## How to run
 
 Simply build the docker image:
@@ -17,7 +19,7 @@ Building a toolchain for:
 
 Base configuration is `armv6-rpi-linux-gnueabi` with `hf`, hard float.
 
-## Dockerfile to build cross toolchain for ARMv6 for Raspberry
+## How to retrieve the output
 
 At the end the image will have a zip file: `/armv6-rpi-linux-gnueabihf.zip`.
 
@@ -25,9 +27,7 @@ To copy, create a container from the image and run cp:
 ```
 docker images
 docker create IMAGE_ID
-docker cp CONTAINER_ID:/dart-sdk.zip .
+docker cp CONTAINER_ID:/armv6-rpi-linux-gnueabihf.zip .
 
 ```
-
-A copy of the binaries is in this repo in the folder `./armv6-rpi-linux-gnueabihf`.
 
